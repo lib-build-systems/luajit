@@ -29,6 +29,11 @@ endif()
 
 find_library(LIBM_LIBRARIES NAMES m)
 
+# Prevent Windows from creating a Debug or Release folder where the executable is installed.
+# The CMakeLists.txt wouldn't be able to find the buildvm.exe file.
+set (CMAKE_RUNTIME_OUTPUT_DIRECTORY_DEBUG ${CMAKE_CURRENT_BINARY_DIR})
+set (CMAKE_RUNTIME_OUTPUT_DIRECTORY_RELEASE ${CMAKE_CURRENT_BINARY_DIR})
+
 add_executable(buildvm
   ../../buildvm.c
   ../../buildvm_asm.c
