@@ -13,7 +13,7 @@ Each branch in a repository defines a specific build system for a specific versi
 ### Want to help?
 Yes please! I already have my hands full on creating a consistent cross-platform CMake experience for the libraries already included. If you have improvements or ready-and-tested config files for other build systems, don't hesitate to create pull requests per build system, per version.
 
-# opencl
+# LuaJIT
 Added CMakeLists.txt file for LuaJIT version 2.1
 * Default installation paths:
   * <CMAKE_INSTALL_PREFIX>/include/luajit (.h, .hpp)
