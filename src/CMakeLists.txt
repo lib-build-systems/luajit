@@ -1,3 +1,4 @@
+# Based off of https://github.com/WohlSoft/LuaJIT
 cmake_minimum_required(VERSION 3.0)
 
 set(LJ_CROSSCOMPILING OFF)
